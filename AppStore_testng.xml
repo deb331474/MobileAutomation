@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+  <parameter name="apkFile" value="//Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk" />
+    <classes>
+      <class name="in.debasish.testCases.TC7_APIDemosAppTest"/>
+      <class name="in.debasish.testCases.TC5_APIDemosAppTest"/>
+      <class name="in.debasish.testCases.TC3_APIDemosAppTest"/>
+      <class name="in.debasish.testCases.TC6_APIDemosAppTest"/>
+      <class name="in.debasish.testCases.TC4_APIDemosAppTest"/>
+      <class name="in.debasish.testCases.TC1_APIDemosAppTest_TC2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

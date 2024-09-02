@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AppiumNativeApps]">
+  <test thread-count="5" name="NativeApp(failed)">
+    <parameter name="port" value="4724"/>
+    <parameter name="apkFile" value="//Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk"/>
+    <classes>
+      <class name="in.debasish.testCases.TC1_APIDemosAppTest_TC2">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="miscellaneousOrientationTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.TC1_APIDemosAppTest_TC2 -->
+      <class name="in.debasish.testCases.TC7_APIDemosAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="doDragandDrop"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.TC7_APIDemosAppTest -->
+      <class name="in.debasish.testCases.TC5_APIDemosAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="getScrollingTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.TC5_APIDemosAppTest -->
+      <class name="in.debasish.testCases.TC6_APIDemosAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="doMessagingTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.TC6_APIDemosAppTest -->
+      <class name="in.debasish.testCases.TC4_APIDemosAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="scrollToEnd"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.TC4_APIDemosAppTest -->
+      <class name="in.debasish.testCases.TC3_APIDemosAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="longPressGestures"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.TC3_APIDemosAppTest -->
+    </classes>
+  </test> <!-- NativeApp(failed) -->
+</suite> <!-- Failed suite [AppiumNativeApps] -->

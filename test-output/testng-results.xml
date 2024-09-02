@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-09-01T00:43:09 IST" name="Suite" finished-at="2024-09-01T00:44:08 IST" duration-ms="59419">
+    <groups>
+    </groups>
+    <test started-at="2024-09-01T00:43:09 IST" name="Test" finished-at="2024-09-01T00:44:08 IST" duration-ms="59419">
+      <class name="in.debasish.generalStore.TC10_GeneralStoreAppTest">
+        <test-method is-config="true" signature="configureAppiumServer(java.lang.String)[pri:0, instance:in.debasish.generalStore.TC10_GeneralStoreAppTest@6572421]" started-at="2024-09-01T00:43:09 IST" name="configureAppiumServer" finished-at="2024-09-01T00:43:29 IST" duration-ms="20321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//Users//debasishpruseth//Downloads//General-Store.apk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureAppiumServer -->
+        <test-method signature="addtoCart()[pri:0, instance:in.debasish.generalStore.TC10_GeneralStoreAppTest@6572421]" started-at="2024-09-01T00:43:29 IST" name="addtoCart" finished-at="2024-09-01T00:44:03 IST" duration-ms="34150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtoCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:in.debasish.generalStore.TC10_GeneralStoreAppTest@6572421]" started-at="2024-09-01T00:44:03 IST" name="tearDown" finished-at="2024-09-01T00:44:08 IST" duration-ms="4912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- in.debasish.generalStore.TC10_GeneralStoreAppTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

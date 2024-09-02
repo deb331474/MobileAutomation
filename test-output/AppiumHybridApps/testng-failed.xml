@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AppiumHybridApps]">
+  <test thread-count="5" name="HybridApp(failed)">
+    <parameter name="apkFile" value="//Users//debasishpruseth//Downloads//General-Store.apk"/>
+    <classes>
+      <class name="in.debasish.generalStore.TC10_GeneralStoreAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="addtoCart"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.generalStore.TC10_GeneralStoreAppTest -->
+      <class name="in.debasish.generalStore.TC9_GeneralStoreAppTest">
+        <methods>
+          <include name="configureAppiumServer"/>
+          <include name="addtoCart"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.generalStore.TC9_GeneralStoreAppTest -->
+    </classes>
+  </test> <!-- HybridApp(failed) -->
+</suite> <!-- Failed suite [AppiumHybridApps] -->

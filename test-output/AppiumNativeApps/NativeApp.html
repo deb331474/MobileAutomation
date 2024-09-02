@@ -1,0 +1,1028 @@
+<html>
+<head>
+<title>TestNG:  NativeApp</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>NativeApp</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/6</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jun 23 13:07:46 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>3 seconds (3239 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='in.debasish.testCases.TC1_APIDemosAppTest_TC2.configureAppiumServer()'><b>configureAppiumServer</b><br>Test class: in.debasish.testCases.TC1_APIDemosAppTest_TC2<br>Parameters: //Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk, 4724</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871580398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871580398'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC1_APIDemosAppTest_TC2@6069db50</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC6_APIDemosAppTest.configureAppiumServer()'><b>configureAppiumServer</b><br>Test class: in.debasish.testCases.TC6_APIDemosAppTest<br>Parameters: //Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk, 4724</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1060549703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1060549703'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC6_APIDemosAppTest@49139829</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC4_APIDemosAppTest.configureAppiumServer()'><b>configureAppiumServer</b><br>Test class: in.debasish.testCases.TC4_APIDemosAppTest<br>Parameters: //Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk, 4724</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace343128256", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace343128256'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC4_APIDemosAppTest@9597028</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC7_APIDemosAppTest.configureAppiumServer()'><b>configureAppiumServer</b><br>Test class: in.debasish.testCases.TC7_APIDemosAppTest<br>Parameters: //Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk, 4724</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1026871825", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1026871825'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>in.debasish.testCases.TC7_APIDemosAppTest@dd8ba08</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC3_APIDemosAppTest.configureAppiumServer()'><b>configureAppiumServer</b><br>Test class: in.debasish.testCases.TC3_APIDemosAppTest<br>Parameters: //Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk, 4724</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1682619279", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1682619279'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC3_APIDemosAppTest@2d7275fc</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC5_APIDemosAppTest.configureAppiumServer()'><b>configureAppiumServer</b><br>Test class: in.debasish.testCases.TC5_APIDemosAppTest<br>Parameters: //Users//debasishpruseth//Downloads//appium-api-demos-3-3-1.apk, 4724</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1533972343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1533972343'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC5_APIDemosAppTest@72d1ad2e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='in.debasish.testCases.TC7_APIDemosAppTest.tearDown()'><b>tearDown</b><br>Test class: in.debasish.testCases.TC7_APIDemosAppTest</td>
+<td></td>
+<td>0</td>
+<td>in.debasish.testCases.TC7_APIDemosAppTest@dd8ba08</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC4_APIDemosAppTest.tearDown()'><b>tearDown</b><br>Test class: in.debasish.testCases.TC4_APIDemosAppTest</td>
+<td></td>
+<td>0</td>
+<td>in.debasish.testCases.TC4_APIDemosAppTest@9597028</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC6_APIDemosAppTest.tearDown()'><b>tearDown</b><br>Test class: in.debasish.testCases.TC6_APIDemosAppTest</td>
+<td></td>
+<td>0</td>
+<td>in.debasish.testCases.TC6_APIDemosAppTest@49139829</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC3_APIDemosAppTest.tearDown()'><b>tearDown</b><br>Test class: in.debasish.testCases.TC3_APIDemosAppTest</td>
+<td></td>
+<td>0</td>
+<td>in.debasish.testCases.TC3_APIDemosAppTest@2d7275fc</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC1_APIDemosAppTest_TC2.tearDown()'><b>tearDown</b><br>Test class: in.debasish.testCases.TC1_APIDemosAppTest_TC2</td>
+<td></td>
+<td>0</td>
+<td>in.debasish.testCases.TC1_APIDemosAppTest_TC2@6069db50</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC5_APIDemosAppTest.tearDown()'><b>tearDown</b><br>Test class: in.debasish.testCases.TC5_APIDemosAppTest</td>
+<td></td>
+<td>0</td>
+<td>in.debasish.testCases.TC5_APIDemosAppTest@72d1ad2e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='in.debasish.testCases.TC6_APIDemosAppTest.doMessagingTest()'><b>doMessagingTest</b><br>Test class: in.debasish.testCases.TC6_APIDemosAppTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1500697171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500697171'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC6_APIDemosAppTest@49139829</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC4_APIDemosAppTest.scrollToEnd()'><b>scrollToEnd</b><br>Test class: in.debasish.testCases.TC4_APIDemosAppTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace645208036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645208036'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC4_APIDemosAppTest@9597028</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC7_APIDemosAppTest.doDragandDrop()'><b>doDragandDrop</b><br>Test class: in.debasish.testCases.TC7_APIDemosAppTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1497558532", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1497558532'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC7_APIDemosAppTest@dd8ba08</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC5_APIDemosAppTest.getScrollingTest()'><b>getScrollingTest</b><br>Test class: in.debasish.testCases.TC5_APIDemosAppTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1773336805", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1773336805'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC5_APIDemosAppTest@72d1ad2e</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC3_APIDemosAppTest.longPressGestures()'><b>longPressGestures</b><br>Test class: in.debasish.testCases.TC3_APIDemosAppTest</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace663716901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace663716901'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC3_APIDemosAppTest@2d7275fc</td></tr>
+<tr>
+<td title='in.debasish.testCases.TC1_APIDemosAppTest_TC2.miscellaneousOrientationTest()'><b>miscellaneousOrientationTest</b><br>Test class: in.debasish.testCases.TC1_APIDemosAppTest_TC2</td>
+<td><div><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1289563251", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1289563251'><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Neither ANDROID_HOME nor ANDROID_SDK_ROOT environment variable was exported. Read https://developer.android.com/studio/command-line/variables for more details 
+Host info: host: &apos;Debasishs-MacBook-Air.local&apos;, ip: &apos;fe80:0:0:0:1410:d320:970c:7ec9%en0&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;17.0.8&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:deviceName=emulator-5554, platformName=ANDROID, appium:automationName=UIAutomator2, appium:app=/Users/debasishpruseth/Downloads/appium-api-demos-3-3-1.apk}], desiredCapabilities=Capabilities {appium:app: /Users/debasishpruseth/Down..., appium:automationName: UIAutomator2, appium:deviceName: emulator-5554, platformName: ANDROID}}]
+Capabilities {}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:126)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:155)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:189)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:92)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:117)
+	at in.debasish.testBase.BaseTest.configureAppiumServer(BaseTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:393)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:326)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>in.debasish.testCases.TC1_APIDemosAppTest_TC2@6069db50</td></tr>
+</table><p>
+</body>
+</html>

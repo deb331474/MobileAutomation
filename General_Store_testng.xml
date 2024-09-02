@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="apkFile" value="//Users//debasishpruseth//Downloads//General-Store.apk" />
+    <classes>
+       <class name="in.debasish.generalStore.TC10_GeneralStoreAppTest"/>
+        <class name="in.debasish.generalStore.TC8_GeneralStoreAppTest"/>
+      <class name="in.debasish.generalStore.TC7_GeneralStoreAppTest"/> 
+      <class name="in.debasish.generalStore.TC9_GeneralStoreAppTest"/>
+   
+       
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
